@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <script src="js/timer.js"></script>
+    <title></title>
+</head>
+<body>
+<div class="timer">
+   <div class="display">
+       <div id="hours">
+           00
+       </div>
+       <div class="separator">
+           :
+       </div>
+       <div id="minutes">
+           00
+       </div>
+       <div class="separator">
+           :
+       </div>
+       <div id="seconds">
+           00
+       </div>
+   </div>
+    <div class="controls">
+        <div class="button" id="start">
+            Start
+        </div>
+        <div class="button" id="stop">
+            Stop
+        </div>
+        <div class="button" id="pause">
+            Pause
+        </div>
+        <div class="button" id="resume">
+            Resume
+        </div>
+        <div class="button" id="reset">
+            Reset
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var fun = function(){
+        var config = {
+            "start" : "start",
+            "stop"  : "stop",
+            "pause" : "pause",
+            "resume": "resume",
+            "reset" : "reset",
+            "hours" : "hours",
+            "minutes" : "minutes",
+            "seconds" : "seconds"
+        };
+        window.addEventListener('load',Timer.init(config));
+    };
+
+    window.addEventListener('load',fun);
+
+</script>
+
+</body>
+</html>
